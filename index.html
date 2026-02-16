@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom Chidozie</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2d9d6a52b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="title" content="Wisdom Chidozie">
+    <meta name="description"
+        content="Wisdom Chidozie is a Full Stack Developer with hands-on experience crafting secure, scalable, and user-centric applications." />
+    <meta property="og:title" content="Wisdom Chidozie">
+    <meta property="og:site_name" content="Wisdom Chidozie">
+    <meta property="og:url" content="https://wisdomchidozie.com">
+    <meta property="og:description"
+        content="Wisdom Chidozie is a Full Stack Developer with hands-on experience crafting secure, scalable, and user-centric applications.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://wisdomchidozie.com/assets/images/favicon.png">
+    <meta name="keywords" content="Chidozie,Wisdom Chidozie,Software Engineer">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Mozilla+Headline:wght@700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .roboto {
+            font-family: 'Roboto', serif;
+        }
+
+        .inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .mozilla {
+            font-family: 'Mozilla Headline', serif;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .mobile-menu {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: scale(0.95);
+        }
+
+        .mobile-menu.open {
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1);
+        }
+
+        .ripple {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            transform: scale(0);
+            animation: ripple 0.6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 p-4 fixed w-full z-10 top-0 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white hover:text-gray-300 transition">Chidozie<span
+                    class="text-indigo-400">.</span></a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex space-x-6 inter">
+                <a href="#projects" class="hover:text-gray-400 transition">Projects</a>
+                <a href="./thoughts.html" class="hover:text-gray-400 transition">Thoughts</a>
+                <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
+            </div>
+
+            <!-- Hamburger -->
+            <button id="menu-btn" class="md:hidden text-2xl text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="menu"
+            class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gray-900 mobile-menu md:hidden">
+            <button id="close-menu" class="absolute top-6 right-6 text-white focus:outline-none">
+                <i class="fas fa-times text-3xl"></i>
+            </button>
+            <nav class="flex flex-col space-y-8 text-center">
+                <a href="#projects"
+                    class="text-2xl font-semibold text-white hover:text-indigo-400 transition transform hover:scale-110 mobile-link">Projects</a>
+                <a href="./thoughts.html"
+                    class="text-2xl font-semibold text-white hover:text-indigo-400 transition transform hover:scale-110 mobile-link">Thoughts</a>
+                <a href="#contact"
+                    class="text-2xl font-semibold text-white hover:text-indigo-400 transition transform hover:scale-110 mobile-link">Contact</a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="container mx-auto px-6 py-32 text-center mt-12">
+        <h1 class="text-4xl sm:text-5xl mozilla font-bold animate__animated animate__fadeInDown">
+            " To know him is to <span class="text-indigo-400">want to know him more. "</span>
+        </h1>
+        <p class="leading-relaxed inter mt-6 max-w-2xl mx-auto animate__animated animate__fadeInUp"
+            style="font-size:16px">
+            My name is Wisdom Chidozie, a Full Stack Developer with 9 years of hands-on experience crafting secure,
+            scalable, and user-centric applications. I specialize in Dart (Flutter), PHP (Laravel), and JavaScript,
+            having built softwares ranging from fintech platforms and betting services to crypto solutions.
+        </p>
+        <p class="leading-relaxed inter mt-6 max-w-2xl mx-auto animate__animated animate__fadeInUp">Over the years, I’ve
+            been helping businesses bring ambitious ideas to life by blending technical precision with thoughtful
+            design.</p>
+        <p class="leading-relaxed inter mt-6 max-w-2xl mx-auto animate__animated animate__fadeInUp">Aside tech, I am
+            fascinated with
+            Travelling, Hip Hop, and Football.</p>
+        <button id="scrollToProjects"
+            class="relative overflow-hidden mt-10 inter px-8 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300 animate__animated animate__zoomIn">
+            Uncover My Creations ✨
+        </button>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Projects -->
+        <section id="projects" class="mb-20">
+            <h2 class="text-3xl font-bold border-b border-gray-700 pb-3 mb-10 mozilla text-center">My Creations</h2>
+
+            <!-- Toggle Switch -->
+            <div class="flex justify-center mb-10">
+                <div class="bg-gray-800 p-1 rounded-full inline-flex">
+                    <button id="btn-projects"
+                        class="px-6 py-2 rounded-full text-sm font-semibold bg-indigo-600 text-white transition-all duration-300 shadow-md">
+                        Projects
+                    </button>
+                    <button id="btn-opensource"
+                        class="px-6 py-2 rounded-full text-sm font-semibold text-gray-400 hover:text-white transition-all duration-300">
+                        Open Source
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/bingpay.png" alt="Bingpay" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Bingpay</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">A fintech solution offering borderless
+                            payment services through a mobile app, allowing users to pay utility bills, buy gift cards,
+                            and trade digital assets.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Flutter</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">PHP</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">MySQL</span>
+                        </div>
+
+                        <a href="https://bingpay.ng" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/karrybiz.png" alt="Karrybiz" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Karrybiz</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">Nicknamed "Shopify for Africans", Karrybiz
+                            helps businesses create online store, track inventory, handle payments, send invoices, and
+                            get business analytics all in one place for free.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Flutter</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">PHP</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">MySQL</span>
+                        </div>
+
+                        <a href="https://karrybiz.ng" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/betpaddi.png" alt="Betpaddi" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Betpaddi</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">Bet code conversions across multiple
+                            platforms, AI generated football predictions and livescore updates.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Flutter</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Node.js</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">PHP</span>
+                        </div>
+
+                        <a href="https://betpaddi.com" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/swiftcab.png" alt="Swiftcab" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Swiftcab</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">Swiftcab is the first Ride booking app
+                            with P2P fare sharing service in Nigeria.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Flutter</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Firebase</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Google
+                                Cloud</span>
+                        </div>
+
+                        <a href="https://swiftcab.app" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/motherland.png" alt="Motherland" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Motherland</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">Born from the need for reconnection,
+                            Motherland brings Africans across the world closer to culture, identity, and home through
+                            storytelling, physical gatherings, and real-world diaspora programs.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Wordpress</span>
+                        </div>
+
+                        <a href="https://motherland2025.com" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/voro.png" alt="Voro" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Voro</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">Voro is a Nigeria-focused online gadget
+                            marketplace specializing in smartphones and devices, with a strong emphasis on quality,
+                            transparency, and fair pricing.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Wordpress</span>
+                        </div>
+
+                        <a href="https://voro.ng" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/bitliva-2.png" alt="Bitliva" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Bitliva</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">Secure platform to buy, sell, send, and
+                            receive cryptocurrency with Naira.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">React
+                                Native</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">PHP</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">MySQL</span>
+                        </div>
+
+                        <a href="https://bitliva.com" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/flixsend.png" alt="Flixsend" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Flixsend</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">Residents in the diaspora can seamlessly
+                            trade digital funds using a secure P2P protocol.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Flutter</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">PHP</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">MySQL</span>
+                        </div>
+
+                        <a href="https://flixsend.com" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 fade-up flex flex-col">
+                    <img src="assets/images/billsflex.png" alt="Billsflex" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-xl inter font-semibold mb-2">Billsflex</h3>
+                        <p class="text-gray-400 inter mb-4 text-sm flex-grow">Flexibility to electricity bills,
+                            education payments, airtime top-ups, and more in one place.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">Flutter</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">PHP</span>
+                            <span
+                                class="px-2 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-md border border-indigo-700/50">MySQL</span>
+                        </div>
+
+                        <a href="https://billsflex.com" target="_blank"
+                            class="text-indigo-400 font-semibold hover:text-indigo-300 transition">Uncover
+                            <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Open Source Grid -->
+            <div id="opensource-grid" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Open Source Card 1 -->
+                <div
+                    class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-2xl hover:border-indigo-500/50 transition-all duration-300 fade-up flex flex-col group">
+                    <div class="flex items-center justify-between mb-4">
+                        <i
+                            class="fas fa-terminal text-indigo-400 text-2xl group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-medium bg-gray-700 text-gray-300 px-2 py-1 rounded">HTML, TAILWIND
+                            CSS</span>
+                    </div>
+                    <h3 class="text-xl inter font-semibold mb-3 group-hover:text-indigo-400 transition-colors">
+                        My Portfolio</h3>
+                    <p class="text-gray-400 inter mb-6 text-sm flex-grow">This very portfolio website built with HTML
+                        and Tailwind CSS.</p>
+                    <a href="https://github.com/thechiddx3/my-portfolio" target="_blank"
+                        class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                        <i class="fab fa-github mr-2"></i> Show me the code
+                    </a>
+                </div>
+
+                <!-- Open Source Card 2 -->
+                <div
+                    class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-2xl hover:border-indigo-500/50 transition-all duration-300 fade-up flex flex-col group">
+                    <div class="flex items-center justify-between mb-4">
+                        <i
+                            class="fas fa-terminal text-indigo-400 text-2xl group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-medium bg-gray-700 text-gray-300 px-2 py-1 rounded">PHP
+                        </span>
+                    </div>
+                    <h3 class="text-xl inter font-semibold mb-3 group-hover:text-indigo-400 transition-colors">
+                        Nubanstack</h3>
+                    <p class="text-gray-400 inter mb-6 text-sm flex-grow">A simple and elegant PHP package for fetching
+                        Nigerian banks and validating account numbers using the Paystack API.</p>
+                    <a href="https://github.com/thechiddx3/nubanstack" target="_blank"
+                        class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                        <i class="fab fa-github mr-2"></i> Show me the code
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Listen with me -->
+        <section class="mb-20 text-center bg-gray-800 p-10 rounded-xl">
+            <h2 class="text-3xl mozilla font-bold mb-4">🎶 Listen with me</h2>
+            <p class="inter text-gray-400 mb-6 max-w-xl mx-auto">
+                Music fuels my creativity. Here’s a playlist I’m vibing to while building cool stuff.
+            </p>
+            <a href="https://music.apple.com/ng/playlist/heavy-rotation-mix/pl.pm-01ed408c735a7f3311918b03f70f0ea4 "
+                target="_blank"
+                class="inline-block px-8 py-3 inter rounded-full bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold shadow-lg transform hover:scale-105 transition-all duration-300">
+                Open on Apple Music
+            </a>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2 class="text-3xl mozilla font-bold border-b border-gray-700 pb-3 mb-5 text-center">Let's Connect 🤝🏾
+            </h2>
+            <p class="inter mb-5 md:px-20 text-center" style="font-size:16px;">I’m always excited to meet curious minds
+                and explore opportunities. Whether you want to talk tech, request for my resume or collaborate on a
+                project, my inbox and socials are open.</p>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <a href="mailto:chidoziewisdom3@gmail.com" class="hover:text-indigo-400 transition"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://github.com/thechiddx3" target="_blank" class="hover:text-indigo-400 transition"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/wisdom-chidozie" target="_blank"
+                    class="hover:text-indigo-400 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/thechiddx3" target="_blank" class="hover:text-indigo-400 transition"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/thechiddx3" target="_blank" class="hover:text-indigo-400 transition"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-center py-6 mt-16">
+        <p class="text-gray-500 text-sm">&copy; <span id="year"></span> Wisdom Chidozie. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Set current year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Scroll animations
+        const elements = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        elements.forEach(el => observer.observe(el));
+
+        // Mobile menu toggle
+        const menu = document.getElementById("menu");
+        const menuBtn = document.getElementById("menu-btn");
+        const closeBtn = document.getElementById("close-menu");
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            menu.classList.toggle("open");
+            document.body.classList.toggle("overflow-hidden");
+        }
+
+        if (menuBtn) menuBtn.addEventListener("click", toggleMenu);
+        if (closeBtn) closeBtn.addEventListener("click", toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        // Project Toggle Logic
+        const btnProjects = document.getElementById('btn-projects');
+        const btnOpenSource = document.getElementById('btn-opensource');
+        const projectsGrid = document.getElementById('projects-grid');
+        const openSourceGrid = document.getElementById('opensource-grid');
+
+        function switchToProjects() {
+            projectsGrid.classList.remove('hidden');
+            openSourceGrid.classList.add('hidden');
+
+            btnProjects.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
+            btnProjects.classList.remove('text-gray-400');
+
+            btnOpenSource.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
+            btnOpenSource.classList.add('text-gray-400');
+        }
+
+        function switchToOpenSource() {
+            projectsGrid.classList.add('hidden');
+            openSourceGrid.classList.remove('hidden');
+
+            btnOpenSource.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
+            btnOpenSource.classList.remove('text-gray-400');
+
+            btnProjects.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
+            btnProjects.classList.add('text-gray-400');
+        }
+
+        if (btnProjects && btnOpenSource) {
+            btnProjects.addEventListener('click', switchToProjects);
+            btnOpenSource.addEventListener('click', switchToOpenSource);
+        }
+
+        // Loop button ripple effect
+        const button = document.getElementById("scrollToProjects");
+        if (button) {
+            button.addEventListener("click", function (e) {
+                const circle = document.createElement("span");
+                const diameter = Math.max(button.clientWidth, button.clientHeight);
+                const radius = diameter / 2;
+
+                const rect = button.getBoundingClientRect();
+                circle.style.width = circle.style.height = `${diameter}px`;
+                circle.style.left = `${e.clientX - rect.left - radius}px`;
+                circle.style.top = `${e.clientY - rect.top - radius}px`;
+                circle.classList.add("ripple");
+
+                const ripple = button.getElementsByClassName("ripple")[0];
+
+                if (ripple) {
+                    ripple.remove();
+                }
+
+                button.appendChild(circle);
+
+                setTimeout(() => {
+                    const projects = document.getElementById('projects');
+                    if (projects) projects.scrollIntoView({ behavior: 'smooth' });
+                }, 300);
+            });
+        }
+    </script>
+    <!--Schema Markup-->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Wisdom Chidozie",
+  "url": "https://wisdomchidozie.com",
+  "image": "https://wisdomchidozie.com/assets/images/favicon.png",
+  "sameAs": [
+    "https://twitter.com/thechiddx3",
+    "https://instagram.com/thechiddx3"
+  ],
+  "jobTitle": "Software Engineer"  
+}
+</script>
+</body>
+
+</html>
