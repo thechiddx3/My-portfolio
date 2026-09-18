@@ -1,5 +1,5 @@
 {
-    "harmonpush.panelUrl": "https://panel333.harmondns.net:2083/",
+    "harmonpush.panelUrl": "https://panel333.harmondns.net:2083",
     "harmonpush.cpanelUser": "chiddlab",
     "harmonpush.targetFolder": "wisdom.chiddlabs.com",
     "harmonpush.active": true
